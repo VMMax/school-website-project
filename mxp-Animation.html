@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>
+      MaxProf
+    </title>
+  </head>
+  
+  <Body bgcolor="#202020" background="graphics/MYSITE/BackroundWebsite.png">
+    
+    <center>
+<table border=0>
+  <tr>
+    <td height=95>
+      <img src="graphics/MYSITE/BackroundA.png" height=95>
+    </td>
+  </tr>
+  <tr>
+    <td height=450>
+      <font color="#ffffff">
+        <table border=0 width=1000 height=450>
+        <tr>
+          <td>
+            <style>
+              h1 {text-align: center;}
+              p {text-align: center;}
+             div {text-align: center;}
+
+            </style>
+
+            <p style="color:White" size=5> <marquee behavior="scroll" direction="right"> Welcome to the Animation page!!</marquee> </p>
+
+          </td>
+        </tr>
+      </table>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td height=45>
+      <table>
+        <tr>
+          <td>
+           <a href="mxp.html"> <img src="graphics/MYSITE/Home.png" height=45>  </a>
+          </td>
+          <td height=45>
+           <a href="mxp-Graphics.html"> <img src="graphics/MYSITE/Graphics.png" height=45>  </a>
+          </td>
+          <td>
+            <a href="mxp-Videos.html"> <img src="graphics/MYSITE/Videos.png" height=45> </a>
+          </td>
+          <td height=45>
+          <a href="mxp-Animation.html"> <img src="graphics/MYSITE/Animation.png" height=45> </a>
+          </td>
+          <td height=45>
+            <a href="mxp-Github.html"> <img src="graphics/MYSITE/Github.png" height=45> </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</center>
+
+    <script> // did not use but you can :) | By replacing the marquee behavior of the welcome slide text
+        var example = ['Welcome', 'Welcome to', 'Welcome to my ', 'Welcome to my home!']; // add , '' for more text
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence").innerHTML = example[i] ;
+                    textSequence(++i);
+                }, 500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+    
+  </body>
+</html>
